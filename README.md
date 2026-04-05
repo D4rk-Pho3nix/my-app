@@ -1,122 +1,103 @@
-# my-app
+<div align="center">
 
-![License](https://img.shields.io/github/license/D4rk-Pho3nix/my-app) ![Version](https://img.shields.io/github/package-json/v/D4rk-Pho3nix/my-app) ![Next.js](https://img.shields.io/badge/Framework-Next.js%2015-black)
+![Banner Placeholder](https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/generated-banners/66ef34fb-937f-4165-9444-5e6fe532ddf5/final-banner.gif)
 
-A modern healthcare professional discovery platform built with Next.js 15, emphasizing shareable search states through a URL-as-Source-of-Truth architecture.
+![Release Date](https://img.shields.io/github/created-at/D4rk-Pho3nix/my-app?style=flat-square&label=released&color=green)
+![Last Commit](https://img.shields.io/github/last-commit/D4rk-Pho3nix/my-app?style=flat-square&label=last%20commit&color=purple)
+![License](https://img.shields.io/github/license/D4rk-Pho3nix/my-app?style=flat-square&color=orange)
+[![Contact](https://img.shields.io/badge/Contact-Dev-cyan?style=flat-square)](mailto:manish.srmist23@gmail.com)
 
----
+**made with 🩷 by [D4rk-Pho3nix](https://github.com/D4rk-Pho3nix)**
+*(if you like my work, consider ⭐ starring the repo!)*
 
-## Table of Contents
+</div>
 
-| Section | Description |
-| :--- | :--- |
-| [Overview](#overview) | Project purpose and core philosophy |
-| [Architecture](#architecture) | System design and directory structure |
-| [Features](#features) | Key capabilities and technical highlights |
-| [Installation](#installation) | Setup instructions for npm and Bun |
-| [Usage](#usage) | Code examples and state sharing patterns |
-| [Docker](#docker) | Containerization and deployment |
-| [Contributing](#contributing) | Guidelines for project contributors |
-| [Maintainers](#maintainers) | Project leadership |
-| [Support](#support) | Help and issue reporting |
-| [License](#license) | Licensing information |
+## 💡 Why this exists
 
----
+> [!TIP]
+> A modern healthcare professional discovery platform emphasizing shareable search states through a URL-as-Source-of-Truth architecture.
 
-## 🏗️ Overview
-
-**my-app** is a specialized healthcare discovery engine designed to bridge the gap between patients and practitioners. Built on the latest Next.js 15 and React 19 features, the platform provides a seamless experience for finding, filtering, and booking medical appointments. 
-
-The project's core philosophy revolves around **Deep Linking**. By treating the browser's URL as the primary source of truth for the application state, every filter combination, search query, and sorting preference is captured in the address bar. This ensures that users can bookmark specific search results or share curated lists of doctors with others effortlessly.
-
----
-
-## 📐 Architecture
-
-### Project Structure
-
-```text
-.
-├── app/                # Next.js App Router (pages, layouts, and API)
-├── components/         # UI components and feature-specific logic
-│   ├── ui/             # Reusable atomic design components
-├── constants/          # Static data and configuration constants
-├── hooks/              # Custom React hooks for state and URL management
-├── public/             # Static assets and images
-├── styles/             # Global CSS and Tailwind configuration
-├── types/              # TypeScript interfaces and type definitions
-└── utils/              # Helper functions and hashing utilities
-```
-
-### System Design Decisions
-- **URL-as-Source-of-Truth**: Unlike standard React applications that store filter state in `useState`, this project uses the browser URL. This prevents state loss on refresh and enables the "back" button to navigate through filter history.
-- **Component Breakdown**:
-    - `DoctorListingWithSearchParams`: A wrapper that utilizes Next.js hooks (`useSearchParams`) to read the URL and pass initial states to the UI.
-    - `DoctorListing`: The core engine that handles the intersection of search, filter, and sort logic.
-    - `InitialsAvatar`: A utility component that implements deterministic hashing to map strings to a specific color palette.
-- **Theming**: Implemented using Tailwind CSS with CSS variables, allowing for seamless transitions between light and dark modes.
-
----
+**Background:** The project is built on Next.js 15 and React 19. Its core philosophy revolves around Deep Linking, treating the browser's URL as the primary source of truth for the application state so that filter combinations, queries, and sorting preferences are captured seamlessly.
 
 ## ✨ Features
 
-- **URL-Synced State Management**: All search filters and sorting options are synchronized with URL query parameters for persistent, shareable states.
-- **Real-time Discovery**: High-performance autocomplete search for doctors and medical specialties.
-- **Advanced Filtering**: Sidebar controls for multi-criteria filtering, including specialty types and consultation modes (In-Clinic vs. Virtual).
-- **Dynamic Sorting**: Effortlessly sort results based on professional experience or consultation fees.
-- **Deterministic Avatar System**: A custom utility that generates consistent background colors and initials based on doctor names, removing the need for external image hosting for placeholders.
-- **Responsive & Dark Mode**: A mobile-first design implemented with Tailwind CSS, featuring full support for system-based or manual dark mode preferences.
-- **Optimized Performance**: Utilizes React Suspense for granular loading states and Next.js 15's App Router for efficient server-side rendering.
+- **URL-Synced State Management:** Search filters and sorting options synchronize with URL query parameters for persistent, shareable states using next/navigation hooks.
+- **Real-time Discovery:** High-performance autocomplete search for doctors and medical specialties with live suggestions.
+- **Advanced Filtering:** Multi-criteria filtering capability via sidebar controls, managing specialties and consultation modes.
+- **Dynamic Sorting:** Instantly sort search results by professional experience or consultation fees.
+- **Deterministic Avatar System:** Generates consistent background colors and initials based on doctor names through a deterministic hashing utility.
+- **Responsive & Dark Mode:** Mobile-first styling implementation with Tailwind CSS supporting system-based and manual dark mode configurations.
+- **Optimized Performance:** Implements React Suspense for granular loading states and Next.js App Router for streamlined server-side rendering.
 
----
+## 🍀 Architecture
 
-## ⚙️ Installation
+```text
+my-app/
+├── app/           # Next.js App Router (pages, layouts, and API)
+├── components/    # UI components and feature-specific logic
+│   ├── ui/        # Reusable atomic design components
+├── constants/     # Static data and configuration constants
+├── hooks/         # Custom React hooks for state and URL management
+├── public/        # Static assets and images
+├── styles/        # Global CSS and Tailwind configuration
+├── types/         # TypeScript interfaces and type definitions
+└── utils/         # Helper functions and hashing utilities
+```
 
-Follow these steps to set up the development environment on your local machine.
+## 🚀 Quick Start
+
+> [!IMPORTANT]
+> Ensure Docker is installed if you intend to run the containerized setup. Node.js or Bun is required for local development.
 
 ### Prerequisites
 
-- **Node.js**: v18.17.0 or later
-- **npm**: v9.x or later
-- **Bun** (Optional): v1.0 or later
+| Requirement | Version | Notes |
+|-------------|---------|-------|
+| Node.js     | 18+     | Required for npm |
+| Bun         | Latest  | Alternative runtime/package manager |
+| Docker      | Latest  | Containerization support |
+| Next.js     | 15      | Core framework |
+| React       | 19      | UI library |
 
-### Local Setup
+> [!WARNING]
+> This project utilizes modern Next.js 15 and React 19 features. Ensure your tooling and environment are properly updated to avoid compatibility issues.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/D4rk-Pho3nix/my-app.git
-   cd my-app
-   ```
+### Clone & Setup
 
-2. **Install dependencies**
-   Using npm:
-   ```bash
-   npm install
-   ```
-   Using Bun:
-   ```bash
-   bun install
-   ```
+```bash
+git clone https://github.com/D4rk-Pho3nix/my-app.git
+cd my-app
+```
 
-3. **Run the development server**
-   Using npm:
-   ```bash
-   npm run dev
-   ```
-   Using Bun:
-   ```bash
-   bun dev
-   ```
+Install
+```bash
+npm install
+# or
+bun install
+```
 
-4. **Access the application**
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
+Build
+```bash
+docker build -t my-app .
+```
 
----
+Run
+```bash
+npm run dev
+# or
+bun dev
+# or
+docker run -p 3000:3000 my-app
+```
 
-## 🚀 Usage
+> [!NOTE] 
+> Next.js hot module replacement is active by default in dev environments.
+
+## 🤖 Usage
+
+Users can access the platform to search, filter, and sort through medical practitioners. The UI ensures consistent avatar generation and enables link sharing with embedded filter configurations natively capturing the application state.
 
 ### Programmatic Avatar Generation
-The `InitialsAvatar` component can be used to generate consistent visuals for users without uploaded photos. It uses a deterministic hashing algorithm to ensure the same name always produces the same background color.
 
 ```tsx
 import { InitialsAvatar } from '@/components/ui/avatar-utils';
@@ -129,60 +110,84 @@ import { InitialsAvatar } from '@/components/ui/avatar-utils';
 ```
 
 ### Deep Linking and State Sharing
-Because the application uses the URL as the source of truth, you can programmatically navigate or share links that automatically apply filters:
 
-```text
+```javascript
 // Example: Dentist search filtered for In-Clinic visits, sorted by fees
 http://localhost:3000/?specialties=Dentist&mode=In+Clinic&sort=fees
 ```
 
----
-
-## 🐳 Docker
-
-To run the application in a containerized environment:
-
-1. **Build the Docker image**
-   ```bash
-   docker build -t my-app .
-   ```
-
-2. **Run the container**
-   ```bash
-   docker run -p 3000:3000 my-app
-   ```
-
-The application will be available at [http://localhost:3000](http://localhost:3000).
-
----
-
 ## 🤝 Contributing
+Contributions are welcome! Please see CONTRIBUTING.md for guidelines.
 
-We welcome contributions to improve the platform's functionality and performance.
+Quick contribution flow:
 
-### Process
-1. **Fork** the repository.
-2. **Create a Feature Branch**: `git checkout -b feature/AmazingFeature`.
-3. **Commit Your Changes**: Use descriptive commit messages following Conventional Commits.
-4. **Push to the Branch**: `git push origin feature/AmazingFeature`.
-5. **Open a Pull Request**: Provide a clear description of the changes and link any related issues.
+```bash
+# Fork the repo
+# Create your feature branch
+git checkout -b feature/amazing-feature
 
----
+# Make your changes
+# Commit with conventional commits
+git commit -m "feat: add amazing feature"
 
-## 🛠️ Maintainers
+# Push and create PR
+git push origin feature/amazing-feature
+```
+> [!NOTE]
+> All PRs must pass CI checks before merging.
 
-- **D4rk-Pho3nix** - *Lead Developer* - [GitHub Profile](https://github.com/D4rk-Pho3nix)
+## 🎗️ Maintainers
 
----
+<div align="left">
+  <a href="https://github.com/D4rk-Pho3nix">
+    <img src="https://github.com/D4rk-Pho3nix.png?size=100" width="100px;" alt="D4rk-Pho3nix"/>
+  </a>
+</div>
 
-## 🆘 Support
+## 🩷 Contributors
 
-If you encounter any issues or have questions:
-- **Issues**: Open a ticket on the [GitHub Issues](https://github.com/D4rk-Pho3nix/my-app/issues) page.
-- **Discussions**: Use the GitHub Discussions tab for general questions and architectural feedback.
+Thanks goes to these wonderful people <3 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
----
+<div align="left">
+  <table>
+    <tbody>
+      <tr>
+        <td align="center" valign="top" width="14.28%">
+          <a href="https://github.com/D4rk-Pho3nix">
+            <img src="https://github.com/D4rk-Pho3nix.png?size=100" width="100px;" alt="D4rk-Pho3nix"/><br />
+            <sub><b>D4rk-Pho3nix</b></sub>
+          </a><br />
+          <a href="#" title="Code">💻</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-## 📜 License
+This project follows the all-contributors specification. Contributions of any kind welcome!
 
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+## 💖 Support
+
+If this project helped you, consider buying me a coffee, any donation is appreciated and goes towards my caffeine addiction :p
+
+<a href="https://buymeacoffee.com/d4rkpho3nix">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExem14OW1tanN3eHlyYmR4NW1sYmJkOTZmbmJxejdjZXB6MXY5cW12MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TDQOtnWgsBx99cNoyH/giphy.gif" width="80">
+</a>
+
+## 📄 License
+
+```text
+This project is licensed under the MIT License.
+```
+
+<div align="center">
+
+[![Star History Chart](https://api.star-history.com/svg?repos=D4rk-Pho3nix/my-app&type=Date)](https://star-history.com/#D4rk-Pho3nix/my-app&Date)
+
+</div>
+
+<div align="center">
+
+⬆ Back to Top
+
+</div>
