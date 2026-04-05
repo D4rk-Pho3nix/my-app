@@ -1,4 +1,5 @@
 <div align="center">
+  
 ![Banner](https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/generated-banners/c2f52b2e-f5c4-43b8-937a-847c22ae26a4/final-banner.gif)
 
 ![Release Date](https://img.shields.io/github/created-at/D4rk-Pho3nix/my-app?style=flat-square&label=released&color=green)
