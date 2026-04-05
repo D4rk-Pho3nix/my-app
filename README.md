@@ -1,4 +1,4 @@
-<div align="center">
+<p align="center">
   
 <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/8585f4c6-36ea-4a93-9bd3-5db2dd96581a/final-banner.gif" alt="Banner" width="800" />
 
@@ -9,7 +9,7 @@
 
 **made with 🩷 by [D4rk-Pho3nix](https://github.com/D4rk-Pho3nix)**
 
-</div>
+</p>
 
 <a name="table-of-contents"></a>
 ## 📑 Table of Contents
