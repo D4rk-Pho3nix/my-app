@@ -1,6 +1,6 @@
 <div align="center">
 
-![Doctor Appointment Booking Banner](https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/8585f4c6-36ea-4a93-9bd3-5db2dd96581a/final-banner.gif)
+![Banner Placeholder](https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/8585f4c6-36ea-4a93-9bd3-5db2dd96581a/final-banner.gif)
 
 ![Release Date](https://img.shields.io/github/created-at/D4rk-Pho3nix/my-app?style=flat-square&label=released&color=green)
 ![Last Commit](https://img.shields.io/github/last-commit/D4rk-Pho3nix/my-app?style=flat-square&label=last%20commit&color=purple)
