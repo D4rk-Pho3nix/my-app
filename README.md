@@ -1,4 +1,4 @@
-![Banner](https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/8585f4c6-36ea-4a93-9bd3-5db2dd96581a/final-banner.gif)
+![Banner](https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/generated-banners/8585f4c6-36ea-4a93-9bd3-5db2dd96581a/final-banner.gif)
 <div align="center">
 
 ![Release Date](https://img.shields.io/github/created-at/D4rk-Pho3nix/my-app?style=flat-square&label=released&color=green)
