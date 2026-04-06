@@ -1,11 +1,11 @@
+aaaaaaaaaaa
 <div align="center">
 
-![Banner Placeholder](https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/final-banner-2c48bcb3-a60b-45ce-b11d-5f4cf1dcfdda/finalbanner.png)
+![Banner Placeholder](https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/final-banner-d01ff5cb-23a7-4d01-b693-54da671ffc51/finalbanner.png)
 
 ![Release Date](https://img.shields.io/github/created-at/D4rk-Pho3nix/my-app?style=flat-square&label=released&color=green)
 ![Last Commit](https://img.shields.io/github/last-commit/D4rk-Pho3nix/my-app?style=flat-square&label=last%20commit&color=purple)
 [![Contact](https://img.shields.io/badge/Contact-Dev-cyan?style=flat-square)](mailto:manish.srmist23@gmail.com)
-
 
 **made with 🩷 by [D4rk-Pho3nix](https://github.com/D4rk-Pho3nix)**
 *(if you like my work, consider ⭐ starring the repo!)*
@@ -22,10 +22,8 @@
 | [📸 Product Showcase](#-product-showcase) | Visual gallery of features |
 | [🏗️ Architecture](#-architecture) | Codebase structure and organization |
 | [🚀 Quick Start](#-quick-start) | Get up and running in minutes |
-| [🎗️ Maintainers](#-maintainers) | Project maintainers |
 | [🩷 Contributors](#-contributors) | Project contributors |
 | [💖 Support](#-support) | How to support the project |
-| [📄 License](#-license) | Licensing information |
 
 ## 💡 Why this exists
 
@@ -45,7 +43,7 @@
 ## 📸 Product Showcase
 
 <div align="center">
-  <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-2c48bcb3-a60b-45ce-b11d-5f4cf1dcfdda/showcase1.png" alt="Main Showcase" width="100%">
+  <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-d01ff5cb-23a7-4d01-b693-54da671ffc51/showcase1.png" alt="Main Showcase" width="100%">
 
   <details>
     <summary><b>View Gallery</b></summary>
@@ -54,21 +52,11 @@
       <tr>
         <td width="50%" align="center" style="vertical-align: top;">
           <b>Feature Showcase 1</b><br>
-          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-2c48bcb3-a60b-45ce-b11d-5f4cf1dcfdda/showcase2.gif" alt="Feature Showcase 1" width="100%">
+          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-d01ff5cb-23a7-4d01-b693-54da671ffc51/showcase2.gif" alt="Feature Showcase 1" width="100%">
         </td>
         <td width="50%" align="center" style="vertical-align: top;">
           <b>Feature Showcase 2</b><br>
-          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-2c48bcb3-a60b-45ce-b11d-5f4cf1dcfdda/showcase3.gif" alt="Feature Showcase 2" width="100%">
-        </td>
-      </tr>
-      <tr>
-        <td width="50%" align="center" style="vertical-align: top;">
-          <b>Feature Showcase 3</b><br>
-          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-2c48bcb3-a60b-45ce-b11d-5f4cf1dcfdda/showcase2.gif" alt="Feature Showcase 3" width="100%">
-        </td>
-        <td width="50%" align="center" style="vertical-align: top;">
-          <b>Feature Showcase 4</b><br>
-          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-2c48bcb3-a60b-45ce-b11d-5f4cf1dcfdda/showcase2.gif" alt="Feature Showcase 4" width="100%">
+          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-d01ff5cb-23a7-4d01-b693-54da671ffc51/showcase3.png" alt="Feature Showcase 2" width="100%">
         </td>
       </tr>
     </table>
@@ -85,101 +73,74 @@ my-app/
 │   ├── layout.tsx
 │   ├── page.tsx
 │   └── globals.css
-├── tailwind.config.ts   # Tailwind CSS configuration and theme extensions
-├── next.config.js       # Framework-level Next.js build and routing settings
-└── README.md            # Project documentation and specifications
+├── tailwind.config.ts
+├── next.config.js
+└── README.md
 ```
 
 ## 🚀 Quick Start
 
 > [!IMPORTANT]
-> Ensure your system is configured to support Next.js 15 and React 19 capabilities. Using appropriate Node versions will prevent hydration and build pipeline failures.
+> Ensure the Docker daemon is actively operational should you elect to utilize the containerized deployment methodology.
 
-### Prerequisites
-
-| Requirement | Version | Notes |
-|-------------|---------|-------|
-| Node.js | >= 18.17.0 | Required for Next.js App Router |
-| Bun | Latest | Optional, optimized execution environment |
-| Docker | Latest | For containerized deployments |
-
-> [!WARNING]
-> If utilizing Docker, verify that port `3000` is exposed and unallocated on your host machine to avoid network binding conflicts.
-
-### Clone & Setup
+### Repository Cloning & Initialization
 
 ```bash
 git clone https://github.com/D4rk-Pho3nix/my-app.git
 cd my-app
 ```
 
-### Install
-
+**Dependency Installation**
 ```bash
 npm install
 # or
 bun install
 ```
 
-### Build
-
+**Container Compilation**
 ```bash
 docker build -t my-app .
 ```
 
-### Run
-
+**Execution**
 ```bash
 npm run dev
-# or 
+# or
 bun dev
-# or via Docker
+# or
 docker run -p 3000:3000 my-app
 ```
 
-## 🎗️ Maintainers
-
-<div align="center">
-  <a href="https://github.com/D4rk-Pho3nix">
-    <img src="https://github.com/D4rk-Pho3nix.png?size=100" width="100px;" alt="D4rk-Pho3nix"/>
-  </a>
-</div>
+> [!NOTE] 
+> The application binds to port `3000` by default. Navigate to `http://localhost:3000` to access the interface.
 
 ## 🩷 Contributors
-
 Thanks goes to these wonderful people <3 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-<div align="center">
-  <table>
-    <tbody>
-      <tr>
+<div align="left"> 
+  <table> 
+    <tbody> 
+      <tr> 
         <td align="center" valign="top" width="14.28%">
           <a href="https://github.com/D4rk-Pho3nix">
             <img src="https://github.com/D4rk-Pho3nix.png?size=100" width="100px;" alt="D4rk-Pho3nix"/><br />
             <sub><b>D4rk-Pho3nix</b></sub>
           </a><br />
           <a href="#" title="Code">💻</a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+        </td> 
+      </tr> 
+    </tbody> 
+  </table> 
 </div>
 
 This project follows the all-contributors specification. Contributions of any kind welcome!
 
 ## 💖 Support
-
 If this project helped you, consider buying me a coffee, any donation is appreciated and goes towards my caffeine addiction :p
 
-<a href="https://buymeacoffee.com/d4rkpho3nix">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExem14OW1tanN3eHlyYmR4NW1sYmJkOTZmbmJxejdjZXB6MXY5cW12MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TDQOtnWgsBx99cNoyH/giphy.gif" width="80" alt="Buy Me A Coffee">
+<a href="https://buymeacoffee.com/d4rkpho3nix"> 
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExem14OW1tanN3eHlyYmR4NW1sYmJkOTZmbmJxejdjZXB6MXY5cW12MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TDQOtnWgsBx99cNoyH/giphy.gif" width="80"> 
 </a>
-
-## 📄 License
-
-```text
-This project is licensed under the MIT License.
-```
 
 <div align="center">
 
@@ -189,6 +150,6 @@ This project is licensed under the MIT License.
 
 <div align="center">
 
-⬆ Back to Top
+⬆ [Back to Top](#table-of-contents)
 
 </div>
