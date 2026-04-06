@@ -1,15 +1,16 @@
-<p align="center">
-  
-<img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/8585f4c6-36ea-4a93-9bd3-5db2dd96581a/final-banner.gif" alt="Banner" width="800" />
+<div align="center">
+
+![Banner Placeholder](https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/final-banner-2c48bcb3-a60b-45ce-b11d-5f4cf1dcfdda/finalbanner.png)
 
 ![Release Date](https://img.shields.io/github/created-at/D4rk-Pho3nix/my-app?style=flat-square&label=released&color=green)
 ![Last Commit](https://img.shields.io/github/last-commit/D4rk-Pho3nix/my-app?style=flat-square&label=last%20commit&color=purple)
-![License](https://img.shields.io/github/license/D4rk-Pho3nix/my-app?style=flat-square&color=orange)
 [![Contact](https://img.shields.io/badge/Contact-Dev-cyan?style=flat-square)](mailto:manish.srmist23@gmail.com)
 
-**made with 🩷 by [D4rk-Pho3nix](https://github.com/D4rk-Pho3nix)**
 
-</p>
+**made with 🩷 by [D4rk-Pho3nix](https://github.com/D4rk-Pho3nix)**
+*(if you like my work, consider ⭐ starring the repo!)*
+
+</div>
 
 <a name="table-of-contents"></a>
 ## 📑 Table of Contents
@@ -18,9 +19,10 @@
 |---------|-------------|
 | [💡 Why this exists](#-why-this-exists) | Purpose and background of the project |
 | [✨ Features](#-features) | Key capabilities and highlights |
+| [📸 Product Showcase](#-product-showcase) | Visual gallery of features |
 | [🏗️ Architecture](#-architecture) | Codebase structure and organization |
 | [🚀 Quick Start](#-quick-start) | Get up and running in minutes |
-| [📖 Usage](#-usage) | Detailed usage instructions |
+| [🎗️ Maintainers](#-maintainers) | Project maintainers |
 | [🩷 Contributors](#-contributors) | Project contributors |
 | [💖 Support](#-support) | How to support the project |
 | [📄 License](#-license) | Licensing information |
@@ -34,16 +36,46 @@
 
 ## ✨ Features
 
-- **URL-Synced State Management**: Search filters and sorting options synchronize with URL query parameters for persistent, shareable states.
-- **Real-time Discovery**: High-performance autocomplete search for doctors and medical specialties with live suggestions.
-- **Advanced Filtering**: Multi-criteria filtering capability via sidebar controls, managing specialties and consultation modes.
-- **Deterministic Avatar System**: Generates consistent background colors and initials based on doctor names.
-- **Responsive & Dark Mode**: Seamlessly adapts to various screen dimensions and user theme preferences.
-- **Optimized Performance**: Leverages React Suspense and server-side rendering boundaries for efficient state hydration.
+- **URL-Synced State Management:** Search filters and sorting options synchronize with URL query parameters for persistent, shareable states.
+- **Real-time Discovery:** High-performance autocomplete search for doctors and medical specialties with live suggestions.
+- **Advanced Filtering:** Multi-criteria filtering capability via sidebar controls, managing specialties and consultation modes.
+- **Deterministic Avatar System:** Generates consistent background colors and initials based on doctor names.
+- **Responsive & Dark Mode:** Seamlessly adapts to various screen dimensions and user theme preferences using Tailwind CSS classes.
+
+## 📸 Product Showcase
+
+<div align="center">
+  <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-2c48bcb3-a60b-45ce-b11d-5f4cf1dcfdda/showcase1.png" alt="Main Showcase" width="100%">
+
+  <details>
+    <summary><b>View Gallery</b></summary>
+    <br>
+    <table width="100%">
+      <tr>
+        <td width="50%" align="center" style="vertical-align: top;">
+          <b>Feature Showcase 1</b><br>
+          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-2c48bcb3-a60b-45ce-b11d-5f4cf1dcfdda/showcase2.gif" alt="Feature Showcase 1" width="100%">
+        </td>
+        <td width="50%" align="center" style="vertical-align: top;">
+          <b>Feature Showcase 2</b><br>
+          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-2c48bcb3-a60b-45ce-b11d-5f4cf1dcfdda/showcase3.gif" alt="Feature Showcase 2" width="100%">
+        </td>
+      </tr>
+      <tr>
+        <td width="50%" align="center" style="vertical-align: top;">
+          <b>Feature Showcase 3</b><br>
+          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-2c48bcb3-a60b-45ce-b11d-5f4cf1dcfdda/showcase2.gif" alt="Feature Showcase 3" width="100%">
+        </td>
+        <td width="50%" align="center" style="vertical-align: top;">
+          <b>Feature Showcase 4</b><br>
+          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-2c48bcb3-a60b-45ce-b11d-5f4cf1dcfdda/showcase2.gif" alt="Feature Showcase 4" width="100%">
+        </td>
+      </tr>
+    </table>
+  </details>
+</div>
 
 ## 🏗️ Architecture
-
-The codebase relies on a URL-Synced Component architecture, delegating application state natively to the browser's URL rather than heavy client-side state managers.
 
 ```text
 my-app/
@@ -53,23 +85,26 @@ my-app/
 │   ├── layout.tsx
 │   ├── page.tsx
 │   └── globals.css
-├── tailwind.config.ts   # UI styling parameters
-├── next.config.js       # Framework-level constraints
-└── README.md
+├── tailwind.config.ts   # Tailwind CSS configuration and theme extensions
+├── next.config.js       # Framework-level Next.js build and routing settings
+└── README.md            # Project documentation and specifications
 ```
 
 ## 🚀 Quick Start
 
 > [!IMPORTANT]
-> Ensure you have an appropriate runtime environment (Node.js/Bun) or Docker installed before proceeding.
+> Ensure your system is configured to support Next.js 15 and React 19 capabilities. Using appropriate Node versions will prevent hydration and build pipeline failures.
 
 ### Prerequisites
 
 | Requirement | Version | Notes |
 |-------------|---------|-------|
-| Node.js | >= 18.x | Required for standard npm execution |
-| Bun | Latest | Optional high-performance runtime alternative |
-| Docker | Latest | Required for containerized build and execution |
+| Node.js | >= 18.17.0 | Required for Next.js App Router |
+| Bun | Latest | Optional, optimized execution environment |
+| Docker | Latest | For containerized deployments |
+
+> [!WARNING]
+> If utilizing Docker, verify that port `3000` is exposed and unallocated on your host machine to avoid network binding conflicts.
 
 ### Clone & Setup
 
@@ -82,7 +117,7 @@ cd my-app
 
 ```bash
 npm install
-# OR
+# or
 bun install
 ```
 
@@ -95,34 +130,26 @@ docker build -t my-app .
 ### Run
 
 ```bash
-# Standard local development
 npm run dev
-
-# Alternative fast local development
+# or 
 bun dev
-
-# Containerized execution
+# or via Docker
 docker run -p 3000:3000 my-app
 ```
 
-> [!NOTE] 
-> The development server binds to port `3000`. Ensure this port is unobstructed prior to execution.
+## 🎗️ Maintainers
 
-## 📖 Usage
-
-Users can access the platform to search, filter, and sort through medical practitioners seamlessly. The UI ensures consistent avatar generation natively capturing the application state, making link sharing with embedded filter configurations completely reliable.
-
-### Deep Linking and State Sharing
-State representation strictly maps to URI parameters, ensuring a distributed, shareable architecture:
-```text
-http://localhost:3000/?specialties=Dentist&mode=In+Clinic&sort=fees
-```
+<div align="center">
+  <a href="https://github.com/D4rk-Pho3nix">
+    <img src="https://github.com/D4rk-Pho3nix.png?size=100" width="100px;" alt="D4rk-Pho3nix"/>
+  </a>
+</div>
 
 ## 🩷 Contributors
 
 Thanks goes to these wonderful people <3 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-<div align="left">
+<div align="center">
   <table>
     <tbody>
       <tr>
@@ -144,8 +171,8 @@ This project follows the all-contributors specification. Contributions of any ki
 
 If this project helped you, consider buying me a coffee, any donation is appreciated and goes towards my caffeine addiction :p
 
-<a href="https://buymeacoffee.com/d4rkpho3nix"> 
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExem14OW1tanN3eHlyYmR4NW1sYmJkOTZmbmJxejdjZXB6MXY5cW12MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TDQOtnWgsBx99cNoyH/giphy.gif" width="80" alt="Buy Me A Coffee"> 
+<a href="https://buymeacoffee.com/d4rkpho3nix">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExem14OW1tanN3eHlyYmR4NW1sYmJkOTZmbmJxejdjZXB6MXY5cW12MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TDQOtnWgsBx99cNoyH/giphy.gif" width="80" alt="Buy Me A Coffee">
 </a>
 
 ## 📄 License
@@ -162,6 +189,6 @@ This project is licensed under the MIT License.
 
 <div align="center">
 
-⬆ [Back to Top](#table-of-contents)
+⬆ Back to Top
 
 </div>
