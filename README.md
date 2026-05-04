@@ -1,6 +1,6 @@
 <div align="center">
 
-![Doctor Appointment Booking Banner](https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/generated-banners/aae55f33-22df-4926-bb4a-c36f66df146a/final-banner.gif)
+![Doctor Appointment Booking Banner](https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/aae55f33-22df-4926-bb4a-c36f66df146a/final-banner.gif)
 
 ![Release Date](https://img.shields.io/github/created-at/D4rk-Pho3nix/my-app?style=flat-square&label=released&color=green)
 [![Contact](https://img.shields.io/badge/Contact-Dev-cyan?style=flat-square)](mailto:manish.srmist23@gmail.com)
@@ -47,7 +47,7 @@
 ## 📸 Product Showcase
 
 <div align="center">
-  <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object//generated-banners/showcase-aae55f33-22df-4926-bb4a-c36f66df146a/showcase1.png" alt="Main Showcase" width="100%">
+  <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-aae55f33-22df-4926-bb4a-c36f66df146a/showcase1.png" alt="Main Showcase" width="100%">
 
   <details>
     <summary><b>View Gallery</b></summary>
@@ -55,11 +55,11 @@
       <tr>
         <td width="50%" align="center" style="vertical-align: top;">
           <b>Feature Showcase 1</b><br>
-          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object//generated-banners/showcase-aae55f33-22df-4926-bb4a-c36f66df146a/showcase2.gif" alt="Feature Showcase 1" width="100%">
+          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-aae55f33-22df-4926-bb4a-c36f66df146a/showcase2.gif" alt="Feature Showcase 1" width="100%">
         </td>
         <td width="50%" align="center" style="vertical-align: top;">
           <b>Feature Showcase 2</b><br>
-          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object//generated-banners/showcase-aae55f33-22df-4926-bb4a-c36f66df146a/showcase3.gif" alt="Feature Showcase 2" width="100%">
+          <img src="https://rqecqirwmpmowvpezhki.supabase.co/storage/v1/object/public/generated-banners/showcase-aae55f33-22df-4926-bb4a-c36f66df146a/showcase3.gif" alt="Feature Showcase 2" width="100%">
         </td>
       </tr>
     </table>
@@ -183,6 +183,6 @@ This project is licensed under the MIT License.
 
 <div align="center">
 
-⬆ [Back to Top](#table-of-contents)
+⬆ [Back to Toppppppp](#table-of-contents)
 
 </div>
